@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cafe Resturant Clone My Edtion">
+    <!--  -->
+    <!-- Google Fonts (Poppins) and (Open Sans) -->
+    <!-- Poppins  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Doto:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Doto:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--  -->
+    <!-- Favicon (Wbsite Icon) -->
+    <link rel="shortcut icon" href="./assets/Imgs/favicon.png" type="image/png">
+    <!-- Extrnal Files (Styles) -->
+     <link rel="stylesheet" href="assets/Css/all.min.css">
+     <link rel="stylesheet" href="assets/Css/mediaScreens.css">
+     <link rel="stylesheet" href="assets/Css/master.css">
+    <!--  -->
+
+    <title>Cafe (C)</title>
+</head>
+<body>
+    <!--    PRE LOADER -->
+    <div class="pre-loader"> 
+        <img src="./assets/Imgs/myLoader.gif" alt="Pre Loader Img" loading="lazy">
+    </div>
+    <!--    Contextmenu-->
+    <div class="contextmenue" id="menu">
+            <li class="nav-item" aria-hidden="true">
+                <a href="#">home</a></li>
+            <li class="nav-item">
+                <a href="#">about us</a></li>
+            <li class="nav-item products-nav" style="position: relative;">
+                <a href="#">our products</a>
+                <ul class="product-navigator" id="pNav" aria-hidden="true">
+                    <li><a href="#">iced coffee</a></li>
+                    <li><a href="#">hot coffee</a></li>
+                    <li><a href="#">fruit juices</a></li>
+                </ul>
+            </li>
+            <li class="nav-item not-lined">
+                <a href="">contact us</a></li>
+    </div>
+    <!--    ASIDE-->
+    <div class="aside-bullets">
+        <ul>
+            <li>
+                <a href="#home" class="test">
+                    <div class="bullet b1"></div>
+                </a>
+                <span class="bullet-link" aria-label="Home">home</span>
+            </li>
+            <li>
+                <a href="#categoriesSec">
+                    <div class="bullet b2"></div>
+                </a>
+                <span class="bullet-link" aria-label="Categories">categories</span>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="bullet b3"></div>
+                </a>
+                <span class="bullet-link" aria-label="Contact Us">contact us</span>
+            </li>
+        </ul>
+    </div>
+    <!--   CUSTOM BTN-->
+    <div class="custom_menu-btn">
+        <button onclick="openNav()" aria-label="Menu" name="Btn Menu">
+            <span class="s-1"> </span>
+            <span class="s-2"> </span>
+            <span class="s-3"> </span>
+        </button>
+        <div id="myNav" class="overlay">
+            <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="blog.html">Blog</a>
+            </div>
+        </div>
+    </div>
+    <!--    LANDING PAGE-->
+    <div class="landing-page" id="home">
+        <div class="ove-1"></div>
+        <div class="ove-2"></div>
+        <div class="container">
+            <div class="context-side">
+                <h3>start your day with a freash coffee</h3>
+                <p>coffee is a popular and beloved beverage enjoyed <br> by people around the world</p>
+                <div class="order">
+                    <a class="order-now" href="#">
+                        order now
+                    </a>
+                </div>
+            </div>
+
+            <div class="show-side">
+                <img src="./assets/Imgs/landing.png" alt="landing">
+            </div>
+        </div>
+
+        <div class="arrow">
+            <a href="#categoriesSec" aria-label="Go Products">
+                <i class="fa-solid fa-angles-down"></i>
+            </a>
+        </div>
+    </div>
+    <!--    CATEGORIES-->
+        <div class="categories" id="categoriesSec" data-reveal>
+            <div class="container">
+                <input type="radio" name="radio" id="ice" data-radio >
+                <input type="radio" name="radio" id="hot" data-radio checked>
+                <input type="radio" name="radio" id="fruit" data-radio >
+                <div class="radio-inputs">
+                    <label for="ice" class="radio">
+                        <span class="name ice">Ice Coffee</span>
+                    </label>
+                    <label for="hot" class="radio">
+                        <span class="name hot">Hot Coffee</span>
+                    </label>
+        
+                    <label for="fruit" class="radio">
+                        <span class="name fruit">Fruit Juice</span>
+                    </label>
+                </div>
+
+                <section>
+                    <div class="content content-1">
+                        <div class="floating-img">
+                            <img src="./assets/Imgs/Ice Coffee/barista-makes-coffee-customers-cafe-restaurant_124463-4951.avif" alt="Content Img">
+                        </div>
+
+                        <div class="products">
+                            <div class="product">
+                                <div class="outline">
+                                    <div class="img-box">
+                                        <img src="./assets/Imgs/Ice Coffee/1.png" alt="Hot Americano img">
+                                    </div>
+                                </div>
+                                <div class="outline">
+                                    <div class="product-details">
+                                        <div class="top">
+                                            <span class="title">hot americano</span>
+                                            <span class="pricing">$8.50</span>
+                                        </div>
+                                        <div class="foot">
+                                            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, commodi? Error modi amet molestiae excepturi!
+                                            </p>
+                                        </div>
+
+                                        <div class="show-product" id="showKey">
+                                            <i class="fa-solid fa-expand"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="outline">
+                                    <div class="img-box">
+                                        <img src="./assets/Imgs/Ice Coffee/2.png" alt="Hot Americano img">
+                                    </div>
+                                </div>
+                                <div class="outline">
+                                    <div class="product-details">
+                                        <div class="top">
+                                            <span class="title">hot cappuccino</span>
+                                            <span class="pricing">$9.50</span>
+                                        </div>
+                                        <div class="foot">
+                                            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, commodi? Error modi amet molestiae excepturi!
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="show-product" id="showKey">
+                                            <i class="fa-solid fa-expand"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="outline">
+                                    <div class="img-box">
+                                        <img src="./assets/Imgs/Ice Coffee/3.png" alt="Hot Americano img">
+                                    </div>
+                                </div>
+                                <div class="outline">
+                                    <div class="product-details">
+                                        <div class="top">
+                                            <span class="title">hot espresso</span>
+                                            <span class="pricing">$7.50</span>
+                                        </div>
+                                        <div class="foot">
+                                            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, commodi? Error modi amet molestiae excepturi!
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="show-product" id="showKey">
+                                            <i class="fa-solid fa-expand"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="outline">
+                                    <div class="img-box">
+                                        <img src="./assets/Imgs/Ice Coffee/4.png" alt="Hot Americano img">
+                                    </div>
+                                </div>
+                                <div class="outline">
+                                    <div class="product-details">
+                                        <div class="top">
+                                            <span class="title">hot latte</span>
+                                            <span class="pricing">$8.50</span>
+                                        </div>
+                                        <div class="foot">
+                                            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, commodi? Error modi amet molestiae excepturi!
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="show-product" id="showKey">
+                                            <i class="fa-solid fa-expand"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="outline see">
+                                <a href="#" class="see_more_hot">
+                                    <span>See More</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                        </div>
+                    </div>
+
+                    <div class="content content-2 active">
+                        <div class="floating-img">
+                            <img src="./assets/Imgs/Hot Coffee/float page.jpg" alt="Content Img">
+                        </div>
+
+                        <div class="products">
+                            <div class="product">
+                                <div class="outline">
+                                    <div class="img-box">
+                                        <img src="./assets/Imgs/Hot Coffee/Hot_Americano.png" alt="Hot Americano img">
+                                    </div>
+                                </div>
+                                <div class="outline">
+                                    <div class="product-details">
+                                        <div class="top">
+                                            <span class="title">hot americano</span>
+                                            <span class="pricing">$8.50</span>
+                                        </div>
+                                        <div class="foot">
+                                            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, commodi? Error modi amet molestiae excepturi!
+                                            </p>
+                                        </div>
+
+                                        <div class="show-product" id="showKey">
+                                            <i class="fa-solid fa-expand"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="outline">
+                                    <div class="img-box">
+                                        <img src="./assets/Imgs/Hot Coffee/Hot_Capp.png" alt="Hot Americano img">
+                                    </div>
+                                </div>
+                                <div class="outline">
+                                    <div class="product-details">
+                                        <div class="top">
+                                            <span class="title">hot cappuccino</span>
+                                            <span class="pricing">$9.50</span>
+                                        </div>
+                                        <div class="foot">
+                                            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, commodi? Error modi amet molestiae excepturi!
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="show-product" id="showKey">
+                                            <i class="fa-solid fa-expand"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="outline">
+                                    <div class="img-box">
+                                        <img src="./assets/Imgs/Hot Coffee/Hot_espresso.png" alt="Hot Americano img">
+                                    </div>
+                                </div>
+                                <div class="outline">
+                                    <div class="product-details">
+                                        <div class="top">
+                                            <span class="title">hot espresso</span>
+                                            <span class="pricing">$7.50</span>
+                                        </div>
+                                        <div class="foot">
+                                            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, commodi? Error modi amet molestiae excepturi!
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="show-product" id="showKey">
+                                            <i class="fa-solid fa-expand"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="outline">
+                                    <div class="img-box">
+                                        <img src="./assets/Imgs/Hot Coffee/Hot_Latte.png" alt="Hot Americano img">
+                                    </div>
+                                </div>
+                                <div class="outline">
+                                    <div class="product-details">
+                                        <div class="top">
+                                            <span class="title">hot latte</span>
+                                            <span class="pricing">$8.50</span>
+                                        </div>
+                                        <div class="foot">
+                                            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, commodi? Error modi amet molestiae excepturi!
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="show-product" id="showKey">
+                                            <i class="fa-solid fa-expand"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="outline see">
+                                <a href="#" class="see_more_hot">
+                                    <span>See More</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                        </div>
+                    </div>
+
+                    <div class="content content-3">
+                        <div class="floating-img">
+                            <img src="./assets/Imgs/Fruit Juice/BGC.avif" alt="Content Img">
+                        </div>
+
+                        <div class="products">
+                            <div class="product">
+                                <div class="outline">
+                                    <div class="img-box">
+                                        <img src="./assets/Imgs/Fruit Juice/1.png" alt="Hot Americano img">
+                                    </div>
+                                </div>
+                                <div class="outline">
+                                    <div class="product-details">
+                                        <div class="top">
+                                            <span class="title">hot americano</span>
+                                            <span class="pricing">$8.50</span>
+                                        </div>
+                                        <div class="foot">
+                                            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, commodi? Error modi amet molestiae excepturi!
+                                            </p>
+                                        </div>
+
+                                        <div class="show-product" id="showKey">
+                                            <i class="fa-solid fa-expand"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="outline">
+                                    <div class="img-box">
+                                        <img src="./assets/Imgs/Fruit Juice/2.png" alt="Hot Americano img">
+                                    </div>
+                                </div>
+                                <div class="outline">
+                                    <div class="product-details">
+                                        <div class="top">
+                                            <span class="title">hot cappuccino</span>
+                                            <span class="pricing">$9.50</span>
+                                        </div>
+                                        <div class="foot">
+                                            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, commodi? Error modi amet molestiae excepturi!
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="show-product" id="showKey">
+                                            <i class="fa-solid fa-expand"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="outline">
+                                    <div class="img-box">
+                                        <img src="./assets/Imgs/Fruit Juice/3.png" alt="Hot Americano img">
+                                    </div>
+                                </div>
+                                <div class="outline">
+                                    <div class="product-details">
+                                        <div class="top">
+                                            <span class="title">hot espresso</span>
+                                            <span class="pricing">$7.50</span>
+                                        </div>
+                                        <div class="foot">
+                                            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, commodi? Error modi amet molestiae excepturi!
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="show-product" id="showKey">
+                                            <i class="fa-solid fa-expand"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="outline">
+                                    <div class="img-box">
+                                        <img src="./assets/Imgs/Fruit Juice/4.png" alt="Hot Americano img">
+                                    </div>
+                                </div>
+                                <div class="outline">
+                                    <div class="product-details">
+                                        <div class="top">
+                                            <span class="title">hot latte</span>
+                                            <span class="pricing">$8.50</span>
+                                        </div>
+                                        <div class="foot">
+                                            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, commodi? Error modi amet molestiae excepturi!
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="show-product" id="showKey">
+                                            <i class="fa-solid fa-expand"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="outline see">
+                                <a href="#" class="see_more_hot">
+                                    <span>See More</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    <!-- Main Website Behaviour  (JS (File))-->
+    <script src="assets/Js/main.js"></script>
+</body>
+</html>
