@@ -621,3 +621,144 @@ input[type="radio"] {
     padding: 10px 20px ;
     margin: 0 auto;
 }
+
+
+.Testemonials {
+    position: relative;
+    padding: var(--sec-padding);
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+}
+.Testemonials  .test_overLay.active {
+    visibility: hidden;
+    opacity: 0;
+}
+.Testemonials  .test_overLay {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.77);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+    line-height: 2;
+    transition: var(--Trans-2);
+}
+.Testemonials .wrapper .c-outline {
+    margin: 10px 0;
+    padding: 2px;
+    background: linear-gradient(to top, #2E073F, var(--Glow), #EBD3F8); 
+    background-size: 100% 200%; 
+    border-radius: 6px;
+}
+.Testemonials .wrapper .c-outline.to-bottom {
+    animation: m-angle 1s linear infinite;
+}
+.Testemonials .wrapper .c-outline.to-top {
+    animation: m-angle-top 1s linear infinite;
+}
+.to-bottom .item {
+    --animation-duration: 30s ;
+    position: absolute;
+    bottom: 130%;
+    animation: marquee var(--animation-duration) linear infinite;
+}
+.to-top .item {
+    --animation-duration: 30s;
+    position: absolute;
+    top: 130%;
+    animation: marquee-top var(--animation-duration) linear infinite;
+}
+.Testemonials .wrapper {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to bottom,
+        rgba(0, 0 , 0, 0),
+        rgba(0, 0, 0, 20%),
+        rgba(0, 0, 0, 80%),
+        rgba(0, 0 , 0, 0)
+     );
+    .card {
+        padding: 25px;
+         background-color: var(--Black);
+         border-radius: 6px;
+         .img-box {
+            --width: 50px;
+            width: var(--width);
+            height: var(--width);
+            display: flex;
+            align-items: center;
+            h3 {
+                margin-left: 12px;
+                font-size: 16px;
+                text-transform: capitalize;
+                font-weight: 500;
+            }
+            > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+         }
+         .c-body {
+            margin-top: 12px;
+            .description {
+                line-height: 2;
+            }
+         }
+         .c-foot {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            i {
+                font-size: 22px;
+                color: red;
+            }
+         }
+    }
+}
+
+
+
+.to-bottom .item-1 {
+    animation-delay: calc(var(--animation-duration) / 5 * (5 - 1) *  -1);
+}
+.to-bottom .item-2 {
+    animation-delay: calc(var(--animation-duration) / 5 * (5 - 2) *  -1);
+}
+.to-bottom .item-3 {
+    animation-delay: calc(var(--animation-duration) / 5 * (5 - 3) *  -1);
+}
+.to-bottom .item-4 {
+    animation-delay: calc(var(--animation-duration) / 5 * (5 - 4) *  -1);
+}
+.to-bottom .item-5 {
+    animation-delay: calc(var(--animation-duration) / 5 * (5 - 5) *  -1);
+}
+.to-top .item-1 {
+    animation-delay: calc(var(--animation-duration) / 5 * (5 - 1) *  -1);
+}
+.to-top .item-2 {
+    animation-delay: calc(var(--animation-duration) / 5 * (5 - 2) *  -1);
+}
+.to-top .item-3 {
+    animation-delay: calc(var(--animation-duration) / 5 * (5 - 3) *  -1);
+}
+.to-top .item-4 {
+    animation-delay: calc(var(--animation-duration) / 5 * (5 - 4) *  -1);
+}
+.to-top .item-5 {
+    animation-delay: calc(var(--animation-duration) / 5 * (5 - 5) *  -1);
+}

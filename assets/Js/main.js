@@ -81,7 +81,7 @@ function floatingImg() {
        }
     })
 }
-
+// Revealed Items
 function toDoFunc() {
     const revealedItems = document.querySelectorAll('[data-reveal]')
     revealedItems.forEach(element => {
@@ -90,11 +90,19 @@ function toDoFunc() {
         : element.classList.remove('revealed');
     })
 }
-
-
-
 window.addEventListener('scroll', toDoFunc);
 window.addEventListener('load', toDoFunc);
+//  Testemonials
+function fadeOut() {
+    const testemonialsSecOverlay = document.querySelector('#testeOverLay') 
+    if(testemonialsSecOverlay.getBoundingClientRect().top <= window.innerHeight) {
+        setTimeout(() => {
+            testemonialsSecOverlay.classList.add('active')
+        }, 2000)
+    } 
+}
+window.addEventListener('load', fadeOut);
+window.addEventListener('scroll', fadeOut);
 // envoke
 pageLoader()
 appearMyContextMe()

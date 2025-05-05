@@ -75,6 +75,36 @@
     }
 }
 /*-----------------------------------*\
+  #Testemonials
+\*-----------------------------------*/
+@media ( width < 1200px) {
+    .Testemonials .container {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+    .Testemonials .wrapper:last-child {
+        display: none;
+    }
+}
+@media ( width < 990px) {
+    .Testemonials .container {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .Testemonials .wrapper:nth-child(3) {
+        display: none;
+    }
+}
+@media ( width < 767px) {
+    .Testemonials .container {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .Testemonials .wrapper:nth-child(2) {
+        display: none;
+    }
+    .Testemonials  .test_overLay {
+        font-size: 20px !important;
+    }
+}
+/*-----------------------------------*\
   #Key Frames
 \*-----------------------------------*/
 
@@ -86,6 +116,11 @@
 @keyframes m-angle {
     to {
         background-position: 0 -200%; 
+    }
+}
+@keyframes m-angle-top {
+    to {
+        background-position: 0 200%; 
     }
 }
 @keyframes ove-1{
@@ -143,7 +178,16 @@
         box-shadow: 0 0 10px #ddd;
     }
 }
-
+@keyframes marquee {
+    to {
+        bottom: calc(-1 * 600px);
+    }
+}
+@keyframes marquee-top {
+    to {
+        top: calc(-1 * 600px);
+    }
+}
 
 
 
